@@ -19,7 +19,7 @@ public class Employer extends AbstractEntity {
 
     // cascading allows for employer updates to be sent to the employers jobs as well??
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "employer.id")
+    @JoinColumn(name = "employer_id")
     private final List<Job> jobs = new ArrayList<>();
 
     public Employer() {}
