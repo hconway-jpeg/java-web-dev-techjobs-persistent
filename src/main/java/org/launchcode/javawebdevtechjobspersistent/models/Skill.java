@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 public class Skill extends AbstractEntity {
 
     @NotNull
-    @Size(max = 300)
+    @Size(max = 300, message = "Must not be longer than 300 characters")
     private String description;
 
     public Skill() {}

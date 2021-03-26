@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 public class Employer extends AbstractEntity {
 
     @NotNull
-    @Size(max = 125)
+    @Size(max = 125, message = "Must not be longer than 125 characters")
     private String location;
 
     public Employer() {}
